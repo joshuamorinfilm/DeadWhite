@@ -20,13 +20,19 @@
     <title>Dead White</title>
     
     <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+	<script src="https://player.vimeo.com/api/player.js"></script>
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+	<script src="js/aos.js"></script>
 
     <style>
         body {
@@ -68,23 +74,74 @@
         color:white;
     }
     </style>
-
+    <script>
+    	  function openNav() {
+    	     document.getElementById("navbarSupportedContent").style.height = "100%";
+    	  }
+    	    function closeNav() {
+    	      document.getElementById("navbarSupportedContent").style.height = "0%";
+    	  }
+    	</script>
   </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<button class="navbar-toggler navbar-toggler-right border-0 " type="button" onclick="openNav()">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div id="navbarSupportedContent">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	
+			<div class="accordion dropdown" id="accordionMain">
+		  		<div class="card bg-transparent">
+		    		<div class="card-header" id="headingOne">
+		      		<h2 class="dropdown">
+		        	<button class="btn dropdown" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		          	ABOUT
+		        	</button>
+		      		</h2>
+		    		</div>
+		    		<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionMain">
+		      		<div class="card-body aboutsection">
+		        		<p style="text-align:justify;">NOMO creates and shapes emotion through cinematic commercials, documentaries, music videos, and films. We're a sleeves-up studio that defiantly pursues work the world wants to talk about. Our headquarters are based in New York and Toronto and our remote creative team spans the globe, enabling us to produce works in over 50 countries to date.</p>
+		      		</div>
+		    		</div>
+		  		</div>
+		  		<div class="card bg-transparent">
+		    	<div class="card-header" id="headingTwo">
+		      	<h2 class="dropdown">
+		        <button class="btn dropdown collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+		          BTS
+		        </button>
+		      </h2>
+		    </div>
+		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMain">
+		      <div class="card-body worksection">
+		      </div>
+		    </div>
+		  </div>
+    	</div>
+    </nav>
+
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner landscape" id="top">
       <video autoplay muted loop playsinline id="bg-video">
           <source src="assets/images/websiteloop-l.mp4" type="video/mp4" />
       </video>
+      <div class="play">
+      <a href="selectedworks/dji"><img src="img/play-xxl.png" alt="play button" /></a>
+      </div>
   </section>
     <section class="section main-banner portrait" id="top">
       <video autoplay muted loop playsinline id="bg-video">
           <source src="assets/images/websiteloop-p.mp4" type="video/mp4" />
       </video>
+      <div class="play">
+      <a href="selectedworks/dji"><img src="img/play-xxl.png" alt="play button" /></a>
+      </div>
   </section>
     <div class="row justify-content-center date g-0" style="width:100%">
-        <p class="text-center">3.6.24</p>
+        <p class="text-center">Mar 9.24</p>
     </div>
     <div class="toptitleleft">
     DEAD
@@ -93,15 +150,19 @@
     WHITE
     </div>
 
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/aos.js"></script>
+			
+		<script>
+  		AOS.init();
+		</script>
+		<!-- Plugin JavaScript -->
+		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/video.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
-    <script src="assets/js/custom.js"></script>
+		<!-- Custom scripts for this template -->
+		<script src="js/freelancer.js"></script>
 </body>
 </html>
