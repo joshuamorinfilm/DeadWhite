@@ -133,22 +133,17 @@
     </nav>
 
   <!-- ***** Main Banner Area Start ***** -->
-    <section class="section main-banner landscape" id="top-l">
-      <video autoplay muted loop playsinline id="bg-video">
+    <section class="section main-banner" id="top">
+      <video autoplay muted loop playsinline id="bg-video" class="landscape">
           <source src="assets/images/websiteloop-l.mp4" type="video/mp4" />
       </video>
-      <div class="play">
-      <a onclick="showOtherVid()"><img src="img/play-xxl.png" alt="play button" /></a>
-      </div>
-    </section>
-    <section class="section main-banner portrait" id="top-p">
-      <video autoplay muted loop playsinline id="bg-video">
+      <video autoplay muted loop playsinline id="bg-video" class="portrait">
           <source src="assets/images/websiteloop-p.mp4" type="video/mp4" />
       </video>
       <div class="play">
       <a onclick="showOtherVid()"><img src="img/play-xxl.png" alt="play button" /></a>
       </div>
-  </section>
+    </section>
     <div class="vi-lazyload" data-id="918340307" id="bg-video-2" data-thumb=""></div>
     <script>
     $('#bg-video-2').hide();
@@ -178,8 +173,7 @@
 		function showOtherVid() {
 		 
 		 
-		    $('#top-l').fadeOut("fast");
-		    $('#top-p').fadeOut("fast");
+		    $('#top').fadeOut("fast");
 		    $('#bg-video-2').fadeIn("slow");
         }
 		</script>
